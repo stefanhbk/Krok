@@ -1,0 +1,575 @@
+*{
+	font-family: "Comic Sans MS", cursive, sans-serif;
+    margin: 0;
+	padding: 0;
+}
+
+#wrapp{
+	width: 100%;
+	height: auto;
+}
+
+#nav{
+	position: fixed;
+	z-index: 1;
+	width: 100%;
+	height: 80px;
+	background-color: lightgreen;
+}
+
+#nav #logo{
+	padding: 8px 50px;
+}
+
+#logo img{
+	cursor: pointer;
+	float: left;
+	max-width: 80px;
+	max-height: 70px;
+}
+
+ul{
+	margin: 0;
+	padding: 0;
+	list-style-type: none;
+}
+
+#sakrij {
+	padding-bottom: 15px; 
+	display: none;
+}
+
+#sakrij li{
+	border: none;
+	border-radius: 30px;
+	background-color: lightgray;
+	color:gray;
+}
+
+#sakrij li:hover{
+	background-color:gray;
+	color:lightgray;
+}
+
+#logo ul li{
+	padding: 5px 2px;
+	width: 165px;
+	text-align: center;
+    box-shadow: 3px 2px;
+	border:2px solid white;
+	color: white;
+	font-weight: bold;
+	font-size: 17px;
+	cursor:pointer;
+	float: left;
+	margin-right:18px;
+	transition: all 0.5s ease;
+}
+
+#menu ul li:hover{
+	color:#26703a;
+	border:2px solid #26703a;
+	background-color: white;
+	}
+
+#menu{
+	padding-top: 20px;
+	float: right;
+}
+
+#pozadina{
+	color: white;
+	text-align: center;
+	width: 100%;
+	padding-top: 200px;
+	height: 500px;
+	background-attachment:fixed;
+	background-image: url("images/krok.png");
+	background-position: center center;
+	background-size: cover;
+}
+
+h1{ padding: 10px 0;
+	cursor: pointer;
+    width: 50%;
+    margin:0 auto;
+	border-bottom: 2px solid white;
+	border-top: 2px solid white;
+	font-size: 45px;
+	background-color: transparent;
+	transition: all 0.3s ease;
+}
+
+h1:hover{ 
+	color: lightgreen;
+	border-color: lightgreen;
+}
+
+.row{
+ 	padding: 30px 10px;
+}
+
+.container img{
+	float:left;
+	-webkit-shape-outside: ellipse();
+    shape-outside: ellipse();
+	max-width: 270px;
+}
+
+.gavial{
+	border-right:2px solid lightgreen;
+	}
+
+p{  
+	font-weight: bold;
+	text-align: justify;
+}
+
+h3{ 
+	padding-bottom: 10px;
+	width: 80%;
+	margin:0 auto; 
+	border-bottom: 1px solid lightgreen;
+}
+
+.patuljasti img{
+	height: 180px;	
+}
+
+.aligator{
+	border-right: 2px solid lightgreen;
+}
+
+.indo{
+	border-right: 2px solid lightgreen;
+}
+
+#animacijaAl{
+	color:#ceffdb;
+	margin:50px 0; 
+	width: 100%;
+	padding: 20px 0;
+	border: none;
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-image: url("images/aligator6.gif");
+}
+
+#ideja{
+    padding: 30px 60px;
+	clear: both;
+	width: 100%;
+	height: auto;
+	background-color: darkgreen;
+}
+
+.form {
+	background: rgba(19, 35, 47, 0.9);
+	padding: 40px;
+    max-width: 600px;
+	margin: 40px auto;
+	border-radius: 4px;
+	box-shadow: 0 4px 10px 4px rgba(19, 35, 47, 0.3);
+}
+
+.tab-group {
+	list-style: none;
+	padding: 0;
+	margin: 0 0 40px 0;
+}
+
+.tab-group:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.tab-group li a {
+    display: block;
+    text-decoration: none;
+    padding: 15px;
+    background: rgba(160, 179, 176, 0.25);
+    color: #a0b3b0;
+    font-size: 20px;
+    float: left;
+    width: 50%;
+    text-align: center;
+    cursor: pointer;
+    transition: .5s ease;
+}
+
+.tab-group li a:hover {
+    background: #179b77;
+    color: #ffffff;
+}
+
+.tab-group .active a {
+    background: #1ab188;
+    color: #ffffff;
+}
+
+.tab-content > div:last-child {
+    display: none;
+}
+
+label {
+    position: absolute;
+    -webkit-transform: translateY(6px);
+    transform: translateY(6px);
+    left: 13px;
+    color: rgba(255, 255, 255, 0.5);
+    transition: all 0.25s ease;
+    -webkit-backface-visibility: hidden;
+    pointer-events: none;
+    font-size: 22px;
+}
+
+label .req {
+    margin: 2px;
+    color: #1ab188;
+}
+
+label.active {
+    -webkit-transform: translateY(50px);
+    transform: translateY(50px);
+    left: 2px;
+    font-size: 14px;
+}
+
+label.active .req {
+    opacity: 0;
+}
+
+label.highlight {
+    color: #ffffff;
+}
+
+input, textarea {
+    font-size: 22px;
+    display: block;
+    width: 100%;
+    height: 100%;
+    padding: 5px 10px;
+    background: none;
+    background-image: none;
+    border: 1px solid #a0b3b0;
+    color: #ffffff;
+    border-radius: 0;
+    transition: border-color .25s ease, box-shadow .25s ease;
+}
+
+input:focus, textarea:focus {
+    outline: 0;
+    border-color: #1ab188;
+}
+
+textarea {
+    border: 2px solid #a0b3b0;
+    resize: vertical;
+}
+
+.field-wrap {
+    position: relative;
+    margin-bottom: 40px;
+}
+
+.top-row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.top-row > div {
+    float: left;
+    width: 48%;
+    margin-right: 4%;
+}
+
+.top-row > div:last-child {
+    margin: 0;
+}
+
+.button {
+    border: 0;
+    outline: none;
+    border-radius: 0;
+    padding: 15px 0;
+    font-size: 2rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: .1em;
+    background: #1ab188;
+    color: #ffffff;
+    transition: all 0.5s ease;
+    -webkit-appearance: none;
+}
+
+.button:hover, .button:focus {
+    background: #179b77;
+}
+
+.button-block {
+    display: block;
+    width: 100%;
+}
+
+.forgot {
+    margin-top: -20px;
+    text-align: right;
+}
+
+#ideja img{ 
+	float:left;
+	max-width: 130px;
+	max-height: 130px;
+}
+
+#ideja p{
+	color: white;
+}
+
+#ideja h3{
+	border:none;
+	color: white;
+}
+
+#sijalica {
+	float:left;
+	margin-right:50px;
+	-webkit-animation: sijalica 2s infinite;
+	-moz-animation: sijalica 2s infinite;
+	-o-animation: sijalica 2s infinite;
+	animation: sijalica 2s infinite;
+}
+
+@-webkit-keyframes sijalica {
+	0% {	 opacity:0; }
+	30% {	 opacity:0.7; }
+	40% {	 opacity:0.3; }
+	50% {	 opacity:1; }
+	90% {	 opacity:1; }
+	100% {	 opacity:0; }
+}
+
+@-moz-keyframes sijalica {
+	0% {	 opacity:0; }
+	30% {	 opacity:0.7; }
+	40% {	 opacity:0.3; }
+	50% {	 opacity:1; }
+	90% {	 opacity:1; }
+	100% {	 opacity:0; }
+}
+
+@-o-keyframes sijalica {
+	0% {	 opacity:0; }
+	30% {	 opacity:0.7; }
+	40% {	 opacity:0.3; }
+	50% {	 opacity:1; }
+	90% {	 opacity:1; }
+	100% {	 opacity:0; }
+}
+
+@keyframes sijalica {
+	0% {	 opacity:0; }
+	30% {	 opacity:0.7; }
+	40% {	 opacity:0.3; }
+	50% {	 opacity:1; }
+	90% {	 opacity:1; }
+	100% {	 opacity:0; }
+}
+
+#footer{
+	padding: 35px 0;
+	text-align: center;
+	margin-top: 20px;
+	width: 100%;
+	height: 120px;
+	background-color: lightgreen;
+	color: white;
+	font-size: 11px;
+}
+
+#footer img{
+	max-width: 80px;
+	max-height: 80px;
+}
+
+#footer p{
+	margin-top: 5px;
+	text-align: center;
+}
+
+
+/*RESPONSIVE WEB DESIGN*/
+
+@media (max-width:649px)  {
+
+	#menu ul li{
+		border-radius: 30px;
+		width: 100%;
+		height: auto;
+		font-size: 18px;
+		background-color: darkgreen;
+	}
+
+    #logo img{
+   		display: none;
+   }
+
+	#nav{
+		padding-top: 10px;
+		height: auto;
+	}
+
+	#menu{
+		width: 100%;
+		padding: 0;
+		margin: auto;
+		display: none;
+	}
+
+	#sakrij{
+		display: block;
+	}
+
+	ul#sakrij.col-xs-12 li{
+		width: 100%;
+}
+
+	h1{
+		font-size: 26px;
+}
+
+   	h3{
+	   	font-size: 18px;
+	   	padding: 10px 0;
+   }
+
+   	p{
+	   	font-size: 13px;
+	   	font-weight: normal;
+   }
+
+	.aligator, .indo, .gavial{
+ 		border:none;
+ }
+
+ 	.container img{
+	 	width: 100%;
+	 	shape-outside: none;
+	 	float: none;
+ }
+ 	.col-lg-6{
+	    padding:0;
+	    text-align: center;
+ }
+
+	#pozadina{
+	   	padding-top: 250px;
+}
+
+   	h1{
+		font-size: 25px;
+}
+
+	.row{
+		padding: 20px 30px;
+}
+
+	#animacijaAl{
+		background-size: 100% 100%;
+		height: auto;
+}
+
+	label{
+		font-size: 14px;
+	}
+
+	input{
+		padding: 10px 0;
+	}
+
+	.tab-group li a{
+		font-size: 12px;
+	}
+
+	#ideja{
+	    padding:20px 20px;
+		width: 100%;
+		height: auto;
+		background-color: darkgreen;
+		text-align: center;
+	}
+
+	#ideja img{
+		 float: none;
+	     width: 100%;
+	     margin-right: 0;
+	     margin-bottom: 15px;
+	}
+}
+
+ 
+@media (min-width: 650px) and (max-width: 970px){
+
+	#menu ul li{
+		border-radius: 30px;
+		width: 100%;
+		height: auto;
+		font-size: 18px;
+		background-color: darkgreen;
+	}
+
+    #logo img{
+   		display: none;
+   }
+
+	#nav{
+		padding-top: 10px;
+		height: auto;
+}
+	#menu{
+		width: 100%;
+		padding: 0;
+		margin: auto;
+		display: none;
+	}
+
+	#sakrij{
+		display: block;
+	}
+
+	ul#sakrij.col-xs-12 li{
+		width: 100%;
+	}
+
+	.row{
+		padding: 20px 30px;
+	}
+
+	#animacijaAl {
+		background-size: 100% 100%;
+		height: auto;
+}
+	label{
+		font-size: 16px;
+	}
+
+	.tab-group li a{
+		font-size: 14px;
+	}
+
+ 	.aligator, .indo, .gavial{
+ 		border:none;
+ }
+
+}
+
+
+@media (min-width: 971px) and (max-width: 1199px){
+
+	.aligator, .indo, .gavial{
+		border-right:none;
+		margin:30px 0;
+	}
+}
